@@ -1,0 +1,4 @@
+[0m[[0minfo[0m] [0m[32mDownloadTest:[0m[0m
+[0m[[0minfo[0m] [0m[32m- assert that started download change its state[0m[0m
+[0m[[0minfo[0m] [0m[32m- assert that good url with empty path don't download[0m[0m
+[0m[[0minfo[0m] [0m[32m- assert that bad url is rejected[0m[0m

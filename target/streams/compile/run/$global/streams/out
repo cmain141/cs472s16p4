@@ -1,0 +1,13 @@
+[0m[[0minfo[0m] [0mRunning edu.luc.cs.view.Console [0m
+[0m[[0mdebug[0m] [0mWaiting for threads to exit or System.exit to be called.[0m
+[0m[[0mdebug[0m] [0m  Classpath:[0m
+[0m[[0mdebug[0m] [0m	/Users/Ayyub/Desktop/cs372s16/cs372s16p4/target/scala-2.11/classes[0m
+[0m[[0mdebug[0m] [0m	/Users/Ayyub/.ivy2/cache/io.reactivex/rxscala_2.11/jars/rxscala_2.11-0.26.1.jar[0m
+[0m[[0mdebug[0m] [0m	/Users/Ayyub/.ivy2/cache/org.scala-lang/scala-library/jars/scala-library-2.11.8.jar[0m
+[0m[[0mdebug[0m] [0m	/Users/Ayyub/.ivy2/cache/io.reactivex/rxjava/jars/rxjava-1.1.1.jar[0m
+[0m[[0mdebug[0m] [0m	/Users/Ayyub/.ivy2/cache/com.ning/async-http-client/jars/async-http-client-1.9.38.jar[0m
+[0m[[0mdebug[0m] [0m	/Users/Ayyub/.ivy2/cache/io.netty/netty/bundles/netty-3.10.5.Final.jar[0m
+[0m[[0mdebug[0m] [0m	/Users/Ayyub/.ivy2/cache/org.slf4j/slf4j-simple/jars/slf4j-simple-1.7.21.jar[0m
+[0m[[0mdebug[0m] [0m	/Users/Ayyub/.ivy2/cache/org.slf4j/slf4j-api/jars/slf4j-api-1.7.21.jar[0m
+[0m[[0mdebug[0m] [0m	/Users/Ayyub/.ivy2/cache/jline/jline/jars/jline-2.12.1.jar[0m
+[0m[[0mdebug[0m] [0mWaiting for thread run-main-0 to terminate.[0m
