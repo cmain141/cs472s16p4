@@ -1,15 +1,16 @@
-package edu.luc.cs.view
+package edu.luc.cs.Userend
 
 import java.net.{MalformedURLException, URL}
-
-import edu.luc.cs.Manager
+import edu.luc.cs.Regulator
 import edu.luc.cs.Status._
 import jline.console.ConsoleReader
-
 import scala.util.Try
 
-object Console extends App {
 
+object Interface extends App {
+
+  // the following RegEx's check for valid URL's
+  // developed using regexer.com
   val CancelPattern = """^\s*([cC])\s+([0-9]+)\s*$""".r
   val ListPattern = """^\s*([lL])\s*$""".r
   val URLPattern = """^\s*(http.*)$""".r
@@ -20,6 +21,7 @@ object Console extends App {
   val EOL = scala.util.Properties.lineSeparator
 
   printHelpMessage
+  // takes input from user for download URLs
   console.setPrompt("download> ")
   Iterator continually {
     console.readLine()
@@ -64,14 +66,25 @@ object Console extends App {
 
   def listAllDownloads(list: List[(Int, Int, Option[Int], DownloadStatus)]): Unit = {
     val separator = "-" * console.getTerminal.getWidth
+    // fileList is metadata of multidimensional array with info for each download
+    val fileList = downloader.getDownLoads
+    var count = 1
     println("\nDownload list")
     println(separator)
-    println("#SNo.      Status")
+    // trying to build a table report of downloads here...
+    println("#SNo.      Status      Bytes Rec'd      Bytes(Total)       %")
     println(separator)
-    println()
+    for(x <- fileList){
+      // Using .get because it is a float coming from a Try
+      // tutor helped determine this part of separating out list elements of download data
+      var percentDownloaded = ((x._2.asInstanceOf[Float]/x._3.get)*100)
+      println(count + "         " + x._4 + "          " x._2 + "           " x._3.get + "           " + f"$percentDownload%1.2f")
+      count += 1
+    }
+
   }
 
-  def isValid(s: String): Boolean = Option(s).isDefined && !(s.equals("q"))
+//  def isValid(s: String): Boolean = Option(s).isDefined && !(s.equals("q"))
 
 
 }
